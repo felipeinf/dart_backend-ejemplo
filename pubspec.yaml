@@ -1,0 +1,15 @@
+name: api_tareas
+description: Lista de tareas API REST (Ejemplo Basico)
+version: 0.0.1
+author: Felipe Concha Almeida <felipe.concha.a@mail.pucv.cl>
+
+environment:
+  sdk: ">=2.0.0 <3.0.0"
+
+dependencies:
+  aqueduct: ^3.0.0
+  uuid: 2.0.1
+
+dev_dependencies:
+  test: ^1.0.0
+  aqueduct_test: ^1.0.0
