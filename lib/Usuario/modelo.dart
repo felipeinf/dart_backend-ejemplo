@@ -23,7 +23,7 @@ class Usuario {
     _nombre = nombre;
   }
 
-  set modificado(String descripcion) {
-    _modificado = DateTime.now();
+  set modificado(DateTime fechaHora) {
+    _modificado = fechaHora;
   }
 }
