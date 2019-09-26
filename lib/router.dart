@@ -1,3 +1,5 @@
+import 'package:api_tareas/Tarea/controlador_de_red.dart';
+
 import 'api_tareas.dart';
 
 class RouterApi extends ApplicationChannel {
@@ -6,8 +8,8 @@ class RouterApi extends ApplicationChannel {
     final router = Router();
 
     router
-      .route("/ejemplo")
-      .linkFunction((Request request) => Response.ok("Hola Mundo"));
+      .route("/tarea[/:id]")
+      .link(() => ControladorDeRedTarea());
 
     return router;
   }
